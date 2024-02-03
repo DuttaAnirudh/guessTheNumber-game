@@ -25,6 +25,9 @@ const gameHighcore = document.querySelector('.highscore');
 const btnCheck = document.querySelector('.check');
 const btnAgain = document.querySelector('.again');
 
+const containerPopup = document.querySelector('.popup');
+const btnClosePopup = document.querySelector('.popup__close');
+
 // FUNCTIONS
 // Updating user-interface text content
 const displayMessage = function (message) {
@@ -101,4 +104,10 @@ btnCheck.addEventListener('click', function () {
   }
 });
 
+// EventListener: AGAIN BUTTON
 btnAgain.addEventListener('click', init);
+
+// EventListener: POPUP CLOSE BUTTON
+btnClosePopup.addEventListener('click', function () {
+  containerPopup.classList.add('hidden');
+});

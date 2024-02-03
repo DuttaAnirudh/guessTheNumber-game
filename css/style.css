@@ -33,6 +33,10 @@ main {
   justify-content: space-around;
 }
 
+.hidden {
+  display: none;
+}
+
 .left {
   width: 52rem;
   display: flex;
@@ -116,4 +120,63 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/******************************************/
+/* POPUP */
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+}
+
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  padding: 4rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+}
+
+.popup__close {
+  position: absolute;
+  font-size: 2rem;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.popup__box > *:not(:last-child) {
+  padding-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.popup__title {
+  font-size: 1.4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.popup__text {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.popup__text--dialogue {
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid red;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  display: block;
+  max-width: 40rem;
+  margin: 0 auto;
 }
