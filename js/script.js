@@ -3,8 +3,9 @@
 let gameNumber, score, gameStatus;
 
 const init = function () {
-  document.querySelector('.guess').value = 0;
   gameNumber = Math.trunc(Math.random() * 20) + 1;
+  console.log(gameNumber);
+  document.querySelector('.guess').value = 0;
   score = 20;
   gameScore.textContent = 20;
   gameStatus = true;
