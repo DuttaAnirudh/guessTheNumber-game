@@ -1,0 +1,11 @@
+{
+  "name": "guessmynumber",
+  "version": "1.0.0",
+  "description": "Guess the right number and win the game",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Anirudh Dutta",
+  "license": "ISC"
+}
